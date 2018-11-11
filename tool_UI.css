@@ -1,0 +1,19 @@
+#slide-common-property{
+border: 2px solid black;
+width: 500px;
+height: auto;
+margin: auto auto 5px auto;
+}
+
+#slide-specific-property>div{
+    border: 2px solid black;
+    width: 500px;
+    height: auto;
+    margin: auto auto 5px auto;
+}
+
+#slide-specific-property h2{
+    background-color: greenyellow;
+    margin-top:0px;
+    text-align: center
+}

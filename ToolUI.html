@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+        <link rel="stylesheet" href="./tool_UI.css">
+</head>
+
+<body>
+        <div id="slide-source" style="display:none">
+                <div id="slide" class="specific-property">
+                        <h2 class="slide-heading">Slide-1</h2>
+                        Image Source: <input type="text" id="image-source" name="image_source">
+                        <br> 
+                        Slide Title: <input type="text" id="slide-title" name="slide_title">
+                        <br> 
+                        Notes Text: <input type="text" id="notes-text" name="notes_text">
+                        <br> 
+                        Section Name: <input type="text" id="section-name" name="section_name">
+                        <br> 
+                        Hide Slide: <input type="radio" id="hide-slide" name="hide_slide" value="true">True
+                        <br>
+                        <input type="radio" id="hide-slide" name="hide_slide" value="false">False
+                        <br>
+                        <br> 
+                        Show Star: <input type="radio" id="show-star" name="show_star" value="true">True
+                        <br>
+                        <input type="radio" id="show-star" name="show_star" value="true">False
+                        <br>
+                        <br>
+
+                </div>
+        </div>
+        <form class="form-group" id="user-form">
+                <div id="slide-common-property" class="common-property">
+
+                        Height:
+                        <input type="text" id="image_height" name="height" />
+                        <br> Width:
+                        <input type="text" id="image_width" name="width" />
+                        <!-- <br> File Name:
+                        <input type="text" name="file_name">
+                        <br> File Location:
+                        <input type="text" name="file_location">
+                        <br/> -->
+
+                </div>
+                <div id="slide-specific-property">
+                </div>
+
+        </form>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="./bundle.js"></script>
+        <button onclick="XML_Creator.generateDiv()">Add Slide</button>
+        <button onclick="XML_Creator.fetchFormData()">Create File</button>
+</body>
+
+</html>

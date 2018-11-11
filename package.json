@@ -1,0 +1,26 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "To test use cases",
+  "main": "XML_Writer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node XML_Writer.js",
+    "build": "browserify JS_Div_Creation1.js -o bundle.js"
+  },
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "browserify-fs": "^1.0.0",
+    "cheerio": "^1.0.0-rc.2",
+    "decode-html": "^2.0.0",
+    "fs": "0.0.1-security",
+    "request": "2.88.0",
+    "unescape": "^1.0.1",
+    "xml": "^1.0.1",
+    "xml-writer": "^1.7.0",
+    "xmlbuilder": "10.1.1"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
